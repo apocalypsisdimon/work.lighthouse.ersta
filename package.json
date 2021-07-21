@@ -1,0 +1,30 @@
+{
+  "name": "lh-ersta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cli.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build-dev": "webpack --mode development",
+    "watch": "webpack --mode production --watch",
+    "watch-dev": "webpack --mode development --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "mini-css-extract-plugin": "^2.1.0",
+    "node-sass": "^4.14.1",
+    "qs": "^6.10.1",
+    "sass-loader": "^12.1.0",
+    "vue": "^2.6.14",
+    "vue-loader": "^15.9.6",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
