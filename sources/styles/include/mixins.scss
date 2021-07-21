@@ -1,3 +1,5 @@
+// Базовые mixin
+
 @mixin box-sizing ($value: content-box) {
   -webkit-box-sizing: $value;
   -moz-box-sizing: $value;

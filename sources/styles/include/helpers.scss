@@ -1,5 +1,32 @@
 // Помошники
 
-@mixin h-icon() {
-  
+@mixin h-icon ($inline: false) {
+  @include flex($inline);
+  @include flex-align-horizontal(center);
+  @include flex-align-vertical(center);
+  @include flex-wrap(none);
+
+  img, svg {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+%h-icon {
+  @include h-icon();
+}
+
+%h-icon--inline {
+  @include h-icon(true);
+}
+
+@mixin h-masked-link () {
+  color: inherit;
+  cursor: default;
+  text-decoration: none;
+}
+
+%h-masked-link {
+  @include h-masked-link();
 }

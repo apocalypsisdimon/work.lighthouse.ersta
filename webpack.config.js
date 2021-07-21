@@ -57,7 +57,7 @@ module.exports = {
             'use': [{
                 'loader': 'file-loader',
                 'options': {
-                    'outputPath': 'resources'
+                    'outputPath': 'resources/generated'
                 }
             }],
             'type': 'javascript/auto'

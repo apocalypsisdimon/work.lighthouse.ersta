@@ -1,26 +1,181 @@
 // Общие стили шаблона
 
-.template {}
-.template-header {}
-.template-header-left {}
-.template-header-right {}
+.template {
+  min-width: 320px;
+  overflow: hidden;
+}
 
-%template-header-part-icon {}
+.template-delimiter {
+  margin: 0 auto;
+  max-width: 1610px;
+  padding: 0 25px;
+}
 
-.template-header-logotype {}
-.template-header-menu {}
+.template-header {
+  height: 130px;
+  position: relative;
+}
 
-.template-header-phone {}
-.template-header-phone-icon {}
-.template-header-phone-text {}
+.template-header-background {
+  @include sides(0, auto, 0, 0);
+  @include size(50%, auto);
 
-.template-header-profile {}
-.template-header-profile-icon {}
-.template-header-profile-text {}
+  background-color: #{$color-background-1};
+  position: absolute;
+}
 
-.template-header-basket {}
-.template-header-basket-icon {}
-.template-header-basket-icon-counter {}
+.template-header-container {
+  @include flex();
+  @include flex-align(start, stretch);
+
+  height: 100%;
+  position: relative;
+}
+
+.template-header--left,
+.template-header--right {
+  @include flex();
+
+  height: 100%;
+}
+
+.template-header--left {
+  @include flex-item-auto();
+  @include flex-align(start, center);
+
+  background-color: #{$color-background-1};
+  height: 100%;
+  width: 880px;
+}
+
+.template-header--right {
+  @include flex-item-full();
+  @include flex-align(end, center);
+
+  padding-left: 30px;
+}
+
+.template-header-logotype {
+  @extend %h-icon;
+  @extend %h-masked-link;
+
+  cursor: pointer;
+
+  img {
+    margin-bottom: 16px;
+  }
+}
+
+.template-header-menu {
+  padding-left: 80px;
+}
+
+.template-header-menu-items {
+  @include flex();
+  @include flex-align(start, center);
+
+  margin: 0 -16px;
+}
+
+.template-header-menu-item {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 16px;
+  padding: 0 16px;
+  text-transform: uppercase;
+}
+
+.template-header-menu-item-wrapper {
+  @extend %h-masked-link;
+
+  cursor: pointer;
+}
+
+%template-header-part {
+  @include flex();
+  @include flex-align(start, center);
+  @include flex-wrap(none);
+}
+
+%template-header-part-icon {
+  @extend %h-icon;
+  @extend %h-masked-link;
+
+  @include flex-item-auto();
+  @include size(32px, 32px);
+}
+
+%template-header-part-text {
+  @extend %h-masked-link;
+
+  @include flex-item-auto();
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.template-header-phone {
+  @extend %template-header-part;
+
+  padding-right: 56px;
+}
+
+.template-header-phone-icon {
+  @extend %template-header-part-icon;
+}
+
+.template-header-phone-text {
+  @extend %template-header-part-text;
+
+  cursor: pointer;
+  padding-left: 22px;
+}
+
+.template-header-profile {
+  @extend %template-header-part;
+
+  padding-right: 26px;
+}
+
+.template-header-profile-icon {
+  @extend %template-header-part-icon;
+}
+
+.template-header-profile-text {
+  @extend %template-header-part-text;
+
+  padding-left: 8px;
+}
+
+.template-header-basket {
+  @extend %template-header-part;
+
+  position: relative;
+}
+
+.template-header-basket-icon {
+  @extend %template-header-part-icon;
+}
+
+.template-header-basket-icon-counter {
+  @include border-radius(50%);
+  @include flex();
+  @include flex-align(center, center);
+  @include flex-wrap(none);
+  @include sides(6px, -1px);
+  @include size(14px, 14px);
+
+  background-color: #{$color-accent};
+  color: #{$color-palette-white};
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 10px;
+  position: absolute;
+}
+
+.template-header-basket-icon-counter-text {}
 
 .template-content {}
 
@@ -29,8 +184,8 @@
 .template-footer-information {}
 .template-footer-information-items {}
 .template-footer-information-item {}
-.template-footer-information-item-icon {}
-.template-footer-information-item-text {}
+.template-footer-information-item--icon {}
+.template-footer-information-item--text {}
 
 .template-footer-menu {}
 .template-footer-menu-items {}
