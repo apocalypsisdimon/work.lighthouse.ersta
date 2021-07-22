@@ -1,15 +1,17 @@
 // Общие стили шаблона
 
 .template {
-  min-width: 320px;
+  min-width: 375px;
   overflow: hidden;
 }
 
 .template-delimiter {
   margin: 0 auto;
-  max-width: 1610px;
-  padding: 0 25px;
+  max-width: 1620px;
+  padding: 0 30px;
 }
+
+.template-delimiter-wrapper {}
 
 .template-header {
   height: 130px;
@@ -25,6 +27,11 @@
 }
 
 .template-header-container {
+  height: 100%;
+  position: relative;
+}
+
+.template-header-container-wrapper {
   @include flex();
   @include flex-align(start, stretch);
 
@@ -32,33 +39,47 @@
   position: relative;
 }
 
-.template-header--left,
-.template-header--right {
+%template-header-side {
   @include flex();
 
   height: 100%;
 }
 
 .template-header--left {
+  @extend %template-header-side;
   @include flex-item-auto();
   @include flex-align(start, center);
 
   background-color: #{$color-background-1};
   height: 100%;
+  padding-right: 28px;
   width: 880px;
 }
 
 .template-header--right {
+  @extend %template-header-side;
   @include flex-item-full();
   @include flex-align(end, center);
 
-  padding-left: 30px;
+  padding-left: 50px;
+}
+
+.template-header-sidebar {
+  @include flex-item-auto();
+
+  display: none;
+  padding-right: 40px;
+}
+
+.template-header-sidebar-button {
+  @extend %h-icon;
 }
 
 .template-header-logotype {
   @extend %h-icon;
   @extend %h-masked-link;
 
+  width: 182px;
   cursor: pointer;
 
   img {
@@ -195,3 +216,67 @@
 .template-footer-policies {}
 .template-footer-policies-items {}
 .template-footer-policies-item {}
+
+@media all and (max-width: 1320px) {
+  .template-header {
+    height: 122px;
+  }
+
+  .template-header-background {
+    width: 30px;
+  }
+
+  .template-header--left {
+    @include flex-item-full();
+
+    width: auto;
+  }
+
+  .template-header--right {
+    @include flex-item-auto();
+  }
+
+  .template-header-sidebar {
+    display: block;
+  }
+
+  .template-header-menu {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .template-header {
+    height: 93px;
+  }
+
+  %template-header-side {
+    padding-bottom: 18px;
+  }
+
+  .template-header--left {
+    @include flex-shrink(1);
+
+    padding-left: 14px;
+  }
+
+  .template-header--right {
+    padding-left: 14px;
+  }
+
+  .template-header-sidebar {
+    padding-right: 24px;
+  }
+
+  .template-header-logotype {
+    width: 128px;
+
+    img {
+      margin-bottom: 8px;
+    }
+  }
+
+  .template-header-phone {
+    display: none;
+  }
+}
