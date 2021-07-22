@@ -1,6 +1,7 @@
 .control[data-control="button"] {
   @include flex(true);
   @include flex-align(center, center);
+  @include transition($transition-time, (background-color, border-color, color));
   @include user-select(none);
 
   background-color: #{$color-accent};
@@ -15,11 +16,27 @@
   text-align: center;
   text-transform: uppercase;
 
+  &:hover {
+    background-color: #{$color-accent-light-1};
+    border-color: #{$color-accent-light-1};
+  }
+
   & > * + * {
     padding-left: 8px;
   }
 
   &[data-control-block="true"] {
     @include flex();
+  }
+
+  &[data-control-scheme="transparent.1"] {
+    background-color: transparent;
+    border-color: #aaa1a3;
+    color: #{$color-accent};
+
+    &:hover {
+      background-color: #aaa1a3;
+      color: #{$color-palette-white};
+    }
   }
 }

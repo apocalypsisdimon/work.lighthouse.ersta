@@ -109,8 +109,13 @@
 
 .template-header-menu-item-wrapper {
   @extend %h-masked-link;
+  @include transition($transition-time, (color));
 
   cursor: pointer;
+
+  &:hover {
+    color: #{$color-accent};
+  }
 }
 
 %template-header-part {
