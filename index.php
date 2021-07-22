@@ -47,5 +47,17 @@
             </div>
         </div>
     </div>
+    <div class="block" data-block="distribution">
+        <div class="block-header">
+            <div class="block-header-title">Дистрибьютор</div>
+            <div class="block-header-line"></div>
+        </div>
+        <div class="block-content">Представляем в России мировые бренды топ-уровня, каждый из которых ценен и уникален: профессиональной косметики и микронутриентов премиум класса, бьюти-гаджеты и ароматы для дома.</div>
+        <div class="block-buttons">
+            <a href="#" class="block-button control" data-control="button">
+                <span class="control-text">Стать партнёром</span>
+            </a>
+        </div>
+    </div>
 </div>
 <?php include(__DIR__.'/parts/footer.php') ?>

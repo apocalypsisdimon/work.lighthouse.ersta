@@ -1,0 +1,25 @@
+.control[data-control="button"] {
+  @include flex(true);
+  @include flex-align(center, center);
+  @include user-select(none);
+
+  background-color: #{$color-accent};
+  border: 1px solid #{$color-accent};
+  color: #{$color-palette-white};
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 2px;
+  padding: 13px 19px;
+  text-align: center;
+  text-transform: uppercase;
+
+  & > * + * {
+    padding-left: 8px;
+  }
+
+  &[data-control-block="true"] {
+    @include flex();
+  }
+}
