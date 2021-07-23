@@ -129,7 +129,7 @@
     }
 
     .block-slide-arrow {
-      @extend %h-icon;
+      @extend %helper-icon;
 
       padding-bottom: 40px;
     }
@@ -334,7 +334,7 @@
     }
 
     .block-partners-item-wrapper-3 {
-      @extend %h-icon;
+      @extend %helper-icon;
       @include overlay();
 
       position: absolute;

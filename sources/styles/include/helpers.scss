@@ -1,6 +1,6 @@
 // Помошники
 
-@mixin h-icon ($inline: false) {
+@mixin helper-icon($inline: false) {
   @include flex($inline);
   @include flex-align-horizontal(center);
   @include flex-align-vertical(center);
@@ -13,20 +13,20 @@
   }
 }
 
-%h-icon {
-  @include h-icon();
+%helper-icon {
+  @include helper-icon();
 }
 
-%h-icon--inline {
-  @include h-icon(true);
+%helper-icon--inline {
+  @include helper-icon(true);
 }
 
-@mixin h-masked-link () {
+@mixin helper-masked-link() {
   color: inherit;
   cursor: default;
   text-decoration: none;
 }
 
-%h-masked-link {
-  @include h-masked-link();
+%helper-masked-link {
+  @include helper-masked-link();
 }

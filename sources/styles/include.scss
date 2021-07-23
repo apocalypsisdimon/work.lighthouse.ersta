@@ -1,5 +1,6 @@
-// Различные подключаемые обработчики и миксины
+// Различные подключаемые функции и миксины
 
+@import './include/library.scss';
 @import './include/variables.scss';
-@import './include/mixins.scss';
+@import './include/base.scss';
 @import './include/helpers.scss';

@@ -72,12 +72,12 @@
 }
 
 .template-header-sidebar-button {
-  @extend %h-icon;
+  @extend %helper-icon;
 }
 
 .template-header-logotype {
-  @extend %h-icon;
-  @extend %h-masked-link;
+  @extend %helper-icon;
+  @extend %helper-masked-link;
 
   width: 182px;
   cursor: pointer;
@@ -108,7 +108,7 @@
 }
 
 .template-header-menu-item-wrapper {
-  @extend %h-masked-link;
+  @extend %helper-masked-link;
   @include transition($transition-time, (color));
 
   cursor: pointer;
@@ -125,15 +125,15 @@
 }
 
 %template-header-part-icon {
-  @extend %h-icon;
-  @extend %h-masked-link;
+  @extend %helper-icon;
+  @extend %helper-masked-link;
 
   @include flex-item-auto();
   @include size(32px, 32px);
 }
 
 %template-header-part-text {
-  @extend %h-masked-link;
+  @extend %helper-masked-link;
 
   @include flex-item-auto();
 
@@ -222,7 +222,7 @@
 .template-footer-policies-items {}
 .template-footer-policies-item {}
 
-@media all and (max-width: 1320px) {
+@include base-breakpoint-tablet() {
   .template-header {
     height: 122px;
   }
@@ -250,7 +250,7 @@
   }
 }
 
-@media all and (max-width: 768px) {
+@include base-breakpoint-mobile() {
   .template-header {
     height: 93px;
   }
