@@ -1,6 +1,6 @@
 // Помошники
 
-@mixin helper-icon($inline: false) {
+@mixin helper-icon ($inline: false) {
   @include flex($inline);
   @include flex-align-horizontal(center);
   @include flex-align-vertical(center);
@@ -21,7 +21,7 @@
   @include helper-icon(true);
 }
 
-@mixin helper-masked-link() {
+@mixin helper-masked-link () {
   color: inherit;
   cursor: default;
   text-decoration: none;

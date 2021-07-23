@@ -1,11 +1,23 @@
-@mixin base-breakpoint-mobile () {
-  @media all and (max-width: #{$mobile-breakpoint}) {
+@mixin background-contain () {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin background-cover () {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin breakpoint-mobile () {
+  @include breakpoint($mobile-breakpoint) {
     @content
   }
 }
 
-@mixin base-breakpoint-tablet () {
-  @media all and (max-width: #{$tablet-breakpoint}) {
+@mixin breakpoint-tablet () {
+  @include breakpoint($tablet-breakpoint) {
     @content
   }
 }

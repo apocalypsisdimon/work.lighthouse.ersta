@@ -197,5 +197,26 @@
             </div>
         </div>
     </div>
+    <div class="block" data-block="education">
+        <div class="block-header">
+            <div class="block-header-title">Обучение</div>
+            <div class="block-header-line"></div>
+        </div>
+        <div class="block-description">Помогаем повышать экспертизу специалистов салонов и клиник красоты.</div>
+        <div class="block-franchise">
+            <div class="block-franchise-picture">
+                <div class="block-franchise-picture-wrapper" style="background-image: url('<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/education/franchise.png')"></div>
+            </div>
+            <div class="block-franchise-information">
+                <div class="block-franchise-title">Франшиза BIOGENA RETAIL</div>
+                <div class="block-franchise-description">Разработка и производство ведутся в нашей штаб-квартире в Ахене, поэтому каждый продукт – от идеи до готовой баночки – живое воплощение принципа made in Germany.</div>
+            </div>
+        </div>
+        <div class="block-buttons">
+            <a href="#" class="block-button control" data-control="button" data-control-scheme="transparent.2">
+                <span class="control-text">Перейти в ERSTA Академия</span>
+            </a>
+        </div>
+    </div>
 </div>
 <?php include(__DIR__.'/parts/footer.php') ?>

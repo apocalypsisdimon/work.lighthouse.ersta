@@ -1,8 +1,12 @@
 // Общие стили шаблона
 
 .template {
-  min-width: 375px;
   overflow: hidden;
+}
+
+.template,
+.template-delimiter-wrap {
+  min-width: $minimal-width;
 }
 
 .template-delimiter {
@@ -222,7 +226,7 @@
 .template-footer-policies-items {}
 .template-footer-policies-item {}
 
-@include base-breakpoint-tablet() {
+@include breakpoint-tablet() {
   .template-header {
     height: 122px;
   }
@@ -250,7 +254,7 @@
   }
 }
 
-@include base-breakpoint-mobile() {
+@include breakpoint-mobile() {
   .template-header {
     height: 93px;
   }

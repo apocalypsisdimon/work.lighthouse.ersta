@@ -134,7 +134,7 @@
       padding-bottom: 40px;
     }
 
-    @media all and (max-width: 1320px) {
+    @include breakpoint-tablet() {
       .block-slide-information {
         padding-bottom: 56px;
         padding-top: 100px;
@@ -153,7 +153,7 @@
       }
     }
 
-    @media all and (max-width: 768px) {
+    @include breakpoint-mobile() {
       .block-slide-content {
         padding: 0 15px;
       }
@@ -187,8 +187,7 @@
     }
   }
 
-  .block[data-block="distribution"],
-  .block[data-block="franchise"] {
+  %block--main-text {
     padding-top: 72px;
 
     .block-header {
@@ -216,7 +215,7 @@
       @include flex-shrink(1);
     }
 
-    @media all and (max-width: 768px) {
+    @include breakpoint-mobile() {
       .block-text {
         padding: 0 15px;
       }
@@ -229,6 +228,8 @@
   }
 
   .block[data-block="distribution"] {
+    @extend %block--main-text;
+
     .block-partners {
       margin-top: 56px;
       position: relative;
@@ -340,13 +341,13 @@
       position: absolute;
     }
 
-    @media all and (max-width: 1420px) {
+    @include breakpoint(1420px) {
       .block-partners-item-wrapper {
         width: 104px;
       }
     }
 
-    @media all and (max-width: 1320px) {
+    @include breakpoint-mobile() {
       .block-partners-content {
         padding-bottom: 105px;
       }
@@ -356,7 +357,7 @@
       }
     }
 
-    @media all and (max-width: 768px) {
+    @include breakpoint-tablet() {
       .block-partners-content {
         padding-bottom: 60px;
         padding-top: 56px;
@@ -374,6 +375,8 @@
   }
 
   .block[data-block="franchise"] {
+    @extend %block--main-text;
+
     padding-bottom: 72px;
 
     .block-franchises {
@@ -412,9 +415,8 @@
     }
 
     .block-franchises-item-picture-wrapper {
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      @include background-contain();
+
       display: block;
       padding-top: 70%;
     }
@@ -448,7 +450,7 @@
       margin-top: 16px;
     }
 
-    @media all and (max-width: 1050px) {
+    @include breakpoint(1050px) {
       .block-franchises-item-picture {
         & + .block-franchises-item-information {
           padding-left: 24px;
@@ -462,7 +464,7 @@
       }
     }
 
-    @media all and (max-width: 768px) {
+    @include breakpoint-mobile() {
       .block-franchises {
         padding: 0 15px;
       }
@@ -492,7 +494,110 @@
     }
   }
 
-  @media all and (max-width: 768px) {
+  .block[data-block="education"] {
+    background-color: #{$color-background-1};
+    padding: 72px 0;
+
+    .block-description {
+      color: #{$color-palette-black};
+      font-size: 16px;
+      line-height: 30px;
+      margin: 40px auto 0 auto;
+      max-width: 900px;
+      text-align: center;
+    }
+
+    .block-franchise {
+      @include flex();
+      @include flex-align(start, end);
+      @include flex-wrap(wrap);
+
+      margin: 56px auto 0 auto;
+      max-width: 1000px;
+    }
+
+    @at-root %block--main-education--franchise-part {
+      @include flex-item-auto();
+
+      width: 50%;
+    }
+
+    .block-franchise-picture {
+      @extend %block--main-education--franchise-part;
+    }
+
+    .block-franchise-picture-wrapper {
+      @include background-cover();
+
+      padding-top: 70%;
+    }
+
+    .block-franchise-information {
+      @extend %block--main-education--franchise-part;
+
+      padding-left: 56px;
+    }
+
+    .block-franchise-title {
+      font-size: 26px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      line-height: 34px;
+      text-transform: uppercase;
+    }
+
+    .block-franchise-description {
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 16px;
+    }
+
+    .block-buttons {
+      @include flex();
+      @include flex-align(center, start);
+
+      padding-top: 56px;
+    }
+
+    .block-button {
+      @include flex-item-auto();
+      @include flex-shrink(1);
+    }
+
+    @include breakpoint(1050px) {
+      .block-franchise-picture {
+        padding-right: 12px;
+      }
+
+      .block-franchise-information {
+        padding-left: 12px;
+        padding-right: 48px;
+      }
+    }
+
+    @include breakpoint-mobile() {
+      padding: 56px 15px;
+
+      .block-franchise {
+        margin-top: 32px;
+      }
+
+      %block--main-education--franchise-part {
+        padding: 0;
+        width: 100%;
+      }
+
+      .block-franchise-information {
+        padding-top: 24px;
+      }
+
+      .block-buttons {
+        padding-top: 32px;
+      }
+    }
+  }
+
+  @include breakpoint-mobile() {
     .block-header-title {
       font-size: 26px;
       line-height: 34px;

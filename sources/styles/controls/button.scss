@@ -39,4 +39,14 @@
       color: #{$color-palette-white};
     }
   }
+
+  &[data-control-scheme="transparent.2"] {
+    background-color: transparent;
+    border-color: #{$color-palette-white};
+    color: #{$color-accent};
+
+    &:hover {
+      background-color: #{$color-palette-white};
+    }
+  }
 }
