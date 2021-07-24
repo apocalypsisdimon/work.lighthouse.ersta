@@ -994,6 +994,102 @@
     }
   }
 
+  .block[data-block="result"] {
+    padding-bottom: 78px;
+
+    .block-result {
+      margin: -20px auto 0 auto;
+      max-width: 1020px;
+      padding: 0 48px;
+    }
+
+    .block-result-item {
+      @include flex();
+      @include flex-align(start, stretch);
+      @include flex-wrap(wrap);
+
+      background-color: #{$color-palette-white};
+      border-radius: 4px;
+      width: 600px;
+
+      -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .block-result-item-picture {
+      @include flex-item-auto();
+
+      position: relative;
+      width: 160px;
+    }
+
+    .block-result-item-picture-wrapper {
+      @include background-cover();
+
+      height: 100%;
+      padding-top: 100%;
+    }
+
+    .block-result-item-information {
+      @include flex-item-auto();
+
+      padding: 12px 24px;
+      width: calc(100% - 160px);
+    }
+
+    .block-result-item-title {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+
+    .block-result-item-description {
+      color: #{$color-palette-black};
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 16px;
+    }
+
+    .block-result-dialog {}
+
+    .block-logotype {
+      @extend %helper-icon;
+      @include flex-align-horizontal(start);
+
+      margin: 0 auto;
+      max-width: 1096px;
+      padding: 0 48px;
+    }
+
+    @include breakpoint-mobile() {
+      .block-result {
+        margin-top: 15px;
+        padding: 0 15px;
+      }
+
+      .block-result-item {
+        width: auto;
+      }
+
+      .block-result-item-picture,
+      .block-result-item-information {
+        width: 100%;
+      }
+
+      .block-result-item-picture-wrapper {
+        height: auto;
+        padding-top: 47%;
+      }
+
+      .block-result-item-information {
+        padding: 15px 24px;
+      }
+    }
+  }
+
   @include breakpoint-mobile() {
     .block-header-title {
       font-size: 26px;

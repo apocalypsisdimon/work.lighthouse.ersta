@@ -504,5 +504,21 @@
             </a>
         </div>
     </div>
+    <div class="block" data-block="result">
+        <div class="block-result">
+            <div class="block-result-item">
+                <div class="block-result-item-picture">
+                    <div class="block-result-item-picture-wrapper" style="background-image: url('<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/result/result.png')"></div>
+                </div>
+                <div class="block-result-item-information">
+                    <div class="block-result-item-title">RESULT</div>
+                    <div class="block-result-item-description">Институты красоты BABOR: уникальные программы ухода за кожей и немецкое качество baborinstitut.ru.</div>
+                </div>
+            </div>
+        </div>
+        <div class="block-logotype">
+            <img src="<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/result/logotype.svg" alt="Ersta" />
+        </div>
+    </div>
 </div>
 <?php include(__DIR__.'/parts/footer.php') ?>
