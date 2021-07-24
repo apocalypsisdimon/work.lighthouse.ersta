@@ -453,5 +453,56 @@
             </div>
         </div>
     </div>
+    <div class="block" data-block="news">
+        <div class="block-header">
+            <div class="block-header-title">Новости</div>
+            <div class="block-header-line"></div>
+        </div>
+        <div class="block-text">Трансформируем пространство, чтобы каждый чувствовал себя важным и уникальным.</div>
+        <div class="block-slider control" data-control="slider.simple">
+            <div class="block-slider-wrapper control-wrapper">
+                <div class="block-slider-content control-items owl-carousel">
+                    <div class="block-slide control-item">
+                        <a href="#" class="block-slide-picture">
+                            <div class="block-slide-picture-wrapper" style="background-image: url('<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/news/news.1.png')"></div>
+                        </a>
+                        <div class="block-slide-information">
+                            <a href="#" class="block-slide-title">Моно и мультибрендовые интернет-магазины, skinbutik.ru</a>
+                            <div class="block-slide-date">12 января 2021</div>
+                            <div class="block-slide-description">Микронутриенты и БАДы с высокой биодоступностью: ADVANCED NUTRITION PROGRAMME (Великобритания), advancednutritionprogramme.ru и BIOGENA (Австрия), biogena-russia.ru. Клиника превентивной медицины BIOGENA CLINIC: продление активного трудоспособного возраста и повышение качества жизни, biogenaclinic.ru</div>
+                            <a href="#" class="block-slide-link">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="block-slide control-item">
+                        <a href="#" class="block-slide-picture">
+                            <div class="block-slide-picture-wrapper" style="background-image: url('<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/news/news.2.png')"></div>
+                        </a>
+                        <div class="block-slide-information">
+                            <a href="#" class="block-slide-title">Поддержка франчайзи на 360 градусов</a>
+                            <div class="block-slide-date">12 января 2021</div>
+                            <div class="block-slide-description">Институты красоты BABOR: уникальные программы ухода за кожей и немецкое качество baborinstitut.ru. Франшиза салонов красоты BABOR: единственная франшиза салонов красоты с акцентом на косметологию. Поддержка франчайзи на 360 градусов, baborfranchise.ru</div>
+                            <a href="#" class="block-slide-link">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="block-slide control-item">
+                        <a href="#" class="block-slide-picture">
+                            <div class="block-slide-picture-wrapper" style="background-image: url('<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/news/news.3.png')"></div>
+                        </a>
+                        <div class="block-slide-information">
+                            <a href="#" class="block-slide-title">Рады видеть вас в нашей команде</a>
+                            <div class="block-slide-date">12 января 2021</div>
+                            <div class="block-slide-description">Моно и мультибрендовые интернет-магазины, skinbutik.ru. Образовательный проект Академия ERSTA: обучение владельцев и специалистов салонов красоты и клиник.</div>
+                            <a href="#" class="block-slide-link">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-buttons">
+            <a href="#" class="block-button control" data-control="button" data-control-scheme="transparent.1">
+                <span class="control-text">Все новости</span>
+            </a>
+        </div>
+    </div>
 </div>
 <?php include(__DIR__.'/parts/footer.php') ?>
