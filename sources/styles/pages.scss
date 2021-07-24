@@ -1,3 +1,127 @@
 // Страницы
 
+.page {
+  padding-bottom: 72px;
+  padding-top: 72px;
+}
+
+.page-title {
+  font-weight: 500;
+  font-size: 38px;
+  letter-spacing: 3px;
+  line-height: 44px;
+  margin: 0 0 32px 0;
+  text-transform: uppercase;
+}
+
+.page-navigation {
+  @include flex();
+  @include flex-align(between, start);
+  @include flex-wrap(none);
+
+  margin-top: 72px;
+}
+
+.page-navigation-elements {
+  @include flex-item-auto();
+  @include flex();
+  @include flex-align(start, start);
+  @include flex-wrap(none);
+
+  color: inherit;
+  margin: 0 -4px;
+}
+
+.page-navigation-element {
+  padding: 0 4px;
+
+  &[data-active="true"] {
+    .page-navigation-element-wrapper {
+      @extend %page-navigation-element---hover;
+    }
+  }
+
+  &[data-type="next"] {
+    .page-navigation-element-wrapper {
+      padding: 8px 24px;
+    }
+  }
+}
+
+.page-navigation-element-wrapper {
+  @include flex();
+  @include flex-align(center, center);
+  @include flex-wrap(none);
+  @include transition($transition-time, (background-color, color));
+
+  cursor: pointer;
+  padding: 8px;
+
+  &:hover {
+    @extend %page-navigation-element---hover;
+  }
+
+  & > * + * {
+    margin-left: 10px;
+  }
+}
+
+.page-navigation-element-icon {
+  @extend %helper-icon;
+  @include flex-item-auto();
+
+  height: 24px;
+}
+
+.page-navigation-element-text {
+  @include flex-item-auto();
+
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  min-width: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@at-root %page-navigation-element---hover {
+  background-color: #{$color-background-4};
+  color: #{$color-palette-black};
+}
+
+.page-navigation-more {
+  @include flex-item-auto();
+
+  padding-left: 16px;
+}
+
+.page-navigation-more-button {
+  @include transition($transition-time, (background-color, border-color));
+
+  border: 1px solid #{$color-background-1};
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  padding: 9px 17px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #{$color-background-1};
+  }
+}
+
+@include breakpoint-mobile {
+  .page-navigation-elements {
+    display: none;
+  }
+
+  .page-navigation-more {
+    padding: 0;
+    width: 100%;
+  }
+}
+
 @import './pages/main.scss';
+@import './pages/news.scss';

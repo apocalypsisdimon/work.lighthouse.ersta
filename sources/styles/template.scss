@@ -11,8 +11,9 @@
 
 .template-delimiter {
   margin: 0 auto;
-  max-width: 1620px;
-  padding: 0 30px;
+  max-width: 1680px;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 .template-delimiter-wrapper {}
@@ -209,6 +210,23 @@
 
 .template-content {}
 
+.template-layout {
+  &[data-template-layout="columns"] {
+    @include flex();
+    @include flex-align(start, start);
+    @include flex-wrap(none);
+
+    .template-layout-column {
+      width: calc(100% - 262px);
+
+      &:first-child {
+        padding-right: 48px;
+        width: 262px;
+      }
+    }
+  }
+}
+
 .template-footer {}
 .template-footer-top {}
 .template-footer-information {}
@@ -227,6 +245,11 @@
 .template-footer-policies-item {}
 
 @include breakpoint-tablet() {
+  .template-delimiter {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
   .template-header {
     height: 122px;
   }
@@ -252,9 +275,26 @@
   .template-header-menu {
     display: none;
   }
+
+  .template-layout {
+    &[data-template-layout="columns"] {
+      .template-layout-column {
+        width: 100%;
+
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 @include breakpoint-mobile() {
+  .template-delimiter {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .template-header {
     height: 93px;
   }
