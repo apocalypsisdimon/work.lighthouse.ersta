@@ -218,5 +218,63 @@
             </a>
         </div>
     </div>
+    <div class="block" data-block="quality">
+        <div class="block-header">
+            <div class="block-header-title">Повышаем качество жизни человека</div>
+            <div class="block-header-line"></div>
+        </div>
+        <div class="block-description">Дистрибьютор косметических брендов, нутриентов, бьюти гаджетов и ароматов для дома.</div>
+        <div class="block-franchise">
+            <div class="block-franchise-picture">
+                <div class="block-franchise-picture-wrapper" style="background-image: url('<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/quality/banner.png')"></div>
+            </div>
+            <div class="block-franchise-information">
+                <div class="block-franchise-slider control" data-control="slider.simple">
+                    <div class="block-franchise-slider-wrapper control-wrapper">
+                        <div class="block-franchise-slider-content control-items owl-carousel">
+                            <div class="block-franchise-slide control-item">
+                                <div class="block-franchise-slide-icon">
+                                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/quality/skinbutik.png" alt="skinbutik.ru" />
+                                </div>
+                                <div class="block-franchise-slide-title">Мультибрендовый интернет-магазин SKINBUTIK.RU</div>
+                                <div class="block-franchise-slide-description">Формулы высокой точности от лабораторий BABOR: для максимальной эффективности, оптимальных гипоаллергенных показателей и абсолютной безопасности продуктов.</div>
+                                <div class="block-franchise-slide-buttons">
+                                    <a href="#" class="block-franchise-slide-button control" data-control="button" data-control-scheme="transparent.1">
+                                        <span class="control-text">Узнать больше</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="block-franchise-slide control-item">
+                                <div class="block-franchise-slide-icon">
+                                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/quality/skinbutik.png" alt="skinbutik.ru" />
+                                </div>
+                                <div class="block-franchise-slide-title">Мультибрендовый интернет-магазин SKINBUTIK.RU</div>
+                                <div class="block-franchise-slide-description">Формулы высокой точности от лабораторий BABOR: для максимальной эффективности, оптимальных гипоаллергенных показателей и абсолютной безопасности продуктов.</div>
+                                <div class="block-franchise-slide-buttons">
+                                    <a href="#" class="block-franchise-slide-button control" data-control="button" data-control-scheme="transparent.1">
+                                        <span class="control-text">Узнать больше</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-franchise-slider-navigation control-navigation">
+                            <div class="block-franchise-slider-navigation-wrapper control-navigation-wrapper">
+                                <div class="block-franchise-slider-navigation-button control-navigation-button" data-action="slide.previous">
+                                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.28596 5.18368L0.0788572 5.18368L0.932411 6.03724L5.60514 10.71L6.31225 10.0029L2.49307 6.18368L15.9999 6.18368L15.9999 5.18368L1.28596 5.18368ZM5.60532 0.657289L3.26835 2.99426L3.97546 3.70137L6.31242 1.3644L5.60532 0.657289Z" fill="#282D46"/>
+                                    </svg>
+                                </div>
+                                <div class="block-franchise-slider-navigation-button control-navigation-button" data-action="slide.next">
+                                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.714 5.81632L15.9211 5.81632L15.0676 4.96276L10.3949 0.290039L9.68775 0.997146L13.5069 4.81632L9.51696e-05 4.81632L9.51259e-05 5.81632L14.714 5.81632ZM10.3947 10.3427L12.7317 8.00574L12.0245 7.29863L9.68758 9.6356L10.3947 10.3427Z" fill="#282D46"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <?php include(__DIR__.'/parts/footer.php') ?>

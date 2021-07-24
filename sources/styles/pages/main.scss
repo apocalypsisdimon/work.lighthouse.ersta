@@ -597,6 +597,115 @@
     }
   }
 
+  .block[data-block="quality"] {
+    background-color: #{$color};
+    padding-top: 88px;
+
+    .block-header-title {
+      color: #{$color-palette-white};
+      padding: 0 15px;
+    }
+
+    .block-description {
+      color: #{$color-palette-white};
+      font-size: 16px;
+      line-height: 30px;
+      margin: 40px auto 0 auto;
+      max-width: 900px;
+      padding: 0 15px;
+      text-align: center;
+    }
+
+    .block-franchise {
+      @include flex();
+      @include flex-align(start, stretch);
+      @include flex-wrap(wrap);
+
+      margin: 56px auto 0 auto;
+      max-width: 1000px;
+    }
+
+    .block-franchise-picture {
+      @include flex-item-auto();
+
+      width: calc(100% - 400px);
+    }
+
+    .block-franchise-picture-wrapper {
+      @include background-cover();
+
+      height: 100%;
+      padding-top: 87%;
+    }
+
+    .block-franchise-information {
+      @include flex-item-auto();
+
+      background-color: #{$color-palette-white};
+      padding: 56px 24px;
+      width: 400px;
+    }
+
+    .block-franchise-slider {
+      padding: 0 56px;
+    }
+
+    .block-franchise-slider-wrapper {}
+    .block-franchise-slider-content {}
+
+    .block-franchise-slide {
+      color: #{$color-palette-black};
+    }
+
+    .block-franchise-slide-icon {
+      @extend %helper-icon;
+      @include flex-align-horizontal(start);
+
+      height: 22px;
+      margin-bottom: 24px;
+    }
+
+    .block-franchise-slide-title {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 24px;
+    }
+
+    .block-franchise-slide-description {
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 24px;
+    }
+
+    .block-franchise-slide-buttons {
+      margin-top: 24px;
+    }
+
+    .block-franchise-slide-button {}
+    .block-franchise-slider-navigation {}
+    .block-franchise-slider-navigation-wrapper {}
+
+    .block-franchise-slider-navigation-button {
+      @extend %helper-icon;
+
+      height: 48px;
+      width: 48px;
+    }
+
+    @include breakpoint-mobile() {
+      padding-top: 48px;
+
+      .block-franchise-picture,
+      .block-franchise-information {
+        width: 100%;
+      }
+
+      .block-franchise-information {
+        padding: 32px 0;
+      }
+    }
+  }
+
   @include breakpoint-mobile() {
     .block-header-title {
       font-size: 26px;

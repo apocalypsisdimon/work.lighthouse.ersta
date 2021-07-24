@@ -1,0 +1,38 @@
+.control[data-control="slider.simple"] {
+  position: relative;
+  z-index: 0;
+
+  .control-wrapper {}
+
+  .control-items {
+    position: relative;
+    z-index: 0;
+  }
+  .control-item {}
+
+  .control-navigation {
+    @include flex();
+    @include flex-align(start, center);
+    @include flex-wrap(none);
+    @include overlay();
+
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+  }
+
+  .control-navigation-wrapper {
+    @include flex-item-auto();
+    @include flex();
+    @include flex-align(between, center);
+    @include flex-wrap(none);
+
+    position: relative;
+    width: 100%;
+  }
+
+  .control-navigation-button {
+    cursor: pointer;
+    visibility: visible;
+  }
+}

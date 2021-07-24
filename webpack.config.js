@@ -70,7 +70,8 @@ module.exports = {
             'classes': '~/classes',
             'mixins': '~/mixins',
             'modules': '~/modules',
-            'resources': '~/modules',
+            'plugins': '~/plugins',
+            'resources': '~/resources',
             'styles': '~/styles'
         }
     },

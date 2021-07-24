@@ -9,7 +9,7 @@ define(SITE_TEMPLATE_PATH, '');
         <title>Страница</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/assets/css/styles.css" />
-        <script async="async" src="/assets/js/application.js"></script>
+        <script src="/assets/js/application.js"></script>
     </head>
     <body>
         <div id="application" class="template">

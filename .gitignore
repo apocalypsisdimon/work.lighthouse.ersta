@@ -1,5 +1,6 @@
 /.idea
 /assets/js/application.js
+/assets/js/application.js.LICENSE.txt
 /assets/css/styles.css
 /assets/resources/generated
 /node_modules
