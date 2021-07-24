@@ -276,5 +276,49 @@
             </div>
         </div>
     </div>
+    <div class="block" data-block="team">
+        <div class="block-header">
+            <div class="block-header-title">Личный опыт талантов ERSTA TEAM</div>
+            <div class="block-header-line"></div>
+        </div>
+        <div class="block-slider control" data-control="slider.simple">
+            <div class="block-slider-wrapper control-wrapper">
+                <div class="block-slider-content control-items owl-carousel">
+                    <div class="block-slide control-item">
+                        <div class="block-slide-picture">
+                            <div class="block-slide-picture-wrapper" style="background-image: url('<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/team/staff.1.png')"></div>
+                        </div>
+                        <div class="block-slide-information">
+                            <div class="block-slide-title">Арина Артёмова</div>
+                            <div class="block-slide-description">Директор по развитию</div>
+                        </div>
+                    </div>
+                    <div class="block-slide control-item">
+                        <div class="block-slide-picture">
+                            <div class="block-slide-picture-wrapper" style="background-image: url('<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/team/staff.2.png')"></div>
+                        </div>
+                        <div class="block-slide-information">
+                            <div class="block-slide-title">Арина Артёмова</div>
+                            <div class="block-slide-description">Директор по развитию</div>
+                        </div>
+                    </div>
+                    <div class="block-slide control-item">
+                        <div class="block-slide-picture">
+                            <div class="block-slide-picture-wrapper" style="background-image: url('<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/team/staff.3.png')"></div>
+                        </div>
+                        <div class="block-slide-information">
+                            <div class="block-slide-title">Арина Артёмова</div>
+                            <div class="block-slide-description">Директор по развитию</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-buttons">
+            <a href="#" class="block-button control" data-control="button" data-control-scheme="transparent.1">
+                <span class="control-text">Наши Вакансии</span>
+            </a>
+        </div>
+    </div>
 </div>
 <?php include(__DIR__.'/parts/footer.php') ?>
