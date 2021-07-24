@@ -320,5 +320,138 @@
             </a>
         </div>
     </div>
+    <div class="block" data-block="awards">
+        <div class="block-header">
+            <div class="block-header-title">Наши награды</div>
+            <div class="block-header-line"></div>
+        </div>
+        <div class="block-text">Открываем Россию для международных брендов.</div>
+        <div class="block-items">
+            <div class="block-items-wrapper">
+                <div class="block-item">
+                    <div class="block-item-wrapper">
+                        <div class="block-item-picture">
+                            <div class="block-item-picture-wrapper">
+                                <div class="block-item-picture-wrapper-2">
+                                    <div class="block-item-picture-wrapper-3">
+                                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/awards/award.1.png" alt="Лучший бренд в категории Красота" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-item-information">
+                            <div class="block-item-title">Лучший бренд в категории Красота</div>
+                            <div class="block-item-date">12 февраля 2020</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-item">
+                    <div class="block-item-wrapper">
+                        <div class="block-item-picture">
+                            <div class="block-item-picture-wrapper">
+                                <div class="block-item-picture-wrapper-2">
+                                    <div class="block-item-picture-wrapper-3">
+                                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/awards/award.2.png" alt="Лучший нейминг в категории продуктов для красоты" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-item-information">
+                            <div class="block-item-title">Лучший нейминг в категории продуктов для красоты</div>
+                            <div class="block-item-date">29 декабря 2020</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-item">
+                    <div class="block-item-wrapper">
+                        <div class="block-item-picture">
+                            <div class="block-item-picture-wrapper">
+                                <div class="block-item-picture-wrapper-2">
+                                    <div class="block-item-picture-wrapper-3">
+                                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/awards/award.1.png" alt="Лучший бренд в категории Красота" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-item-information">
+                            <div class="block-item-title">Лучший бренд в категории Красота</div>
+                            <div class="block-item-date">12 февраля 2020</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-slider control" data-control="slider.simple">
+            <div class="block-slider-wrapper control-wrapper">
+                <div class="block-slider-content control-items owl-carousel">
+                    <div class="block-slide control-item">
+                        <div class="block-slide-wrapper">
+                            <div class="block-slide-picture">
+                                <div class="block-slide-picture-wrapper">
+                                    <div class="block-slide-picture-wrapper-2">
+                                        <div class="block-slide-picture-wrapper-3">
+                                            <img src="<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/awards/award.1.png" alt="Лучший бренд в категории Красота" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-slide-information">
+                                <div class="block-slide-title">Лучший бренд в категории Красота</div>
+                                <div class="block-slide-date">12 февраля 2020</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-slide control-item">
+                        <div class="block-slide-wrapper">
+                            <div class="block-slide-picture">
+                                <div class="block-slide-picture-wrapper">
+                                    <div class="block-slide-picture-wrapper-2">
+                                        <div class="block-slide-picture-wrapper-3">
+                                            <img src="<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/awards/award.2.png" alt="Лучший нейминг в категории продуктов для красоты" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-slide-information">
+                                <div class="block-slide-title">Лучший нейминг в категории продуктов для красоты</div>
+                                <div class="block-slide-date">29 декабря 2020</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-slide control-item">
+                        <div class="block-slide-wrapper">
+                            <div class="block-slide-picture">
+                                <div class="block-slide-picture-wrapper">
+                                    <div class="block-slide-picture-wrapper-2">
+                                        <div class="block-slide-picture-wrapper-3">
+                                            <img src="<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/main/awards/award.1.png" alt="Лучший бренд в категории Красота" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-slide-information">
+                                <div class="block-slide-title">Лучший бренд в категории Красота</div>
+                                <div class="block-slide-date">12 февраля 2020</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-slider-navigation control-navigation">
+                    <div class="block-slider-navigation-wrapper control-navigation-wrapper">
+                        <div class="block-slider-navigation-button control-navigation-button" data-action="slide.previous">
+                            <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.28596 5.18368L0.0788572 5.18368L0.932411 6.03724L5.60514 10.71L6.31225 10.0029L2.49307 6.18368L15.9999 6.18368L15.9999 5.18368L1.28596 5.18368ZM5.60532 0.657289L3.26835 2.99426L3.97546 3.70137L6.31242 1.3644L5.60532 0.657289Z" fill="#282D46"/>
+                            </svg>
+                        </div>
+                        <div class="block-slider-navigation-button control-navigation-button" data-action="slide.next">
+                            <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.714 5.81632L15.9211 5.81632L15.0676 4.96276L10.3949 0.290039L9.68775 0.997146L13.5069 4.81632L9.51696e-05 4.81632L9.51259e-05 5.81632L14.714 5.81632ZM10.3947 10.3427L12.7317 8.00574L12.0245 7.29863L9.68758 9.6356L10.3947 10.3427Z" fill="#282D46"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <?php include(__DIR__.'/parts/footer.php') ?>

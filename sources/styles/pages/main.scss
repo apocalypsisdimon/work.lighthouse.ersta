@@ -647,11 +647,12 @@
       width: 400px;
     }
 
-    .block-franchise-slider {
+    .block-franchise-slider {}
+
+    .block-franchise-slider-wrapper {
       padding: 0 56px;
     }
 
-    .block-franchise-slider-wrapper {}
     .block-franchise-slider-content {}
 
     .block-franchise-slide {
@@ -783,6 +784,129 @@
 
     @include breakpoint-mobile() {
       padding: 56px 0;
+    }
+  }
+
+  .block[data-block="awards"] {
+    @extend %block--main-text;
+
+    padding-bottom: 72px;
+
+    .block-items {
+      margin: 56px auto 0 auto;
+      max-width: 1120px;
+      padding: 0 48px;
+    }
+
+    .block-items-wrapper {
+      @include flex();
+      @include flex-align(center, start);
+      @include flex-wrap(wrap);
+
+      margin: -28px;
+    }
+
+    .block-slider {
+      display: none;
+      margin-top: 32px;
+      padding: 0 15px;
+    }
+
+    .block-slider-wrapper {
+      padding: 0 48px;
+    }
+
+    .block-slider-content {}
+    .block-slide {}
+
+    .block-slider-navigation {}
+    .block-slider-navigation-wrapper {}
+
+    .block-slider-navigation-button {
+      @extend %helper-icon;
+
+      height: 48px;
+      width: 48px;
+    }
+
+    .block-item {
+      @include flex-item-auto();
+
+      padding: 28px;
+      text-align: center;
+      width: 33.333333%;
+    }
+
+    .block-item,
+    .block-slide {
+      text-align: center;
+    }
+
+    .block-item-wrapper,
+    .block-slide-wrapper {}
+
+    .block-item-picture,
+    .block-slide-picture {
+      @include flex();
+      @include flex-align(center, center);
+      @include flex-wrap(none);
+    }
+
+    .block-item-picture-wrapper,
+    .block-slide-picture-wrapper {
+      position: relative;
+      width: 186px;
+    }
+
+    .block-item-picture-wrapper-2,
+    .block-slide-picture-wrapper-2 {
+      padding-top: 100%;
+      position: relative;
+    }
+
+    .block-item-picture-wrapper-3,
+    .block-slide-picture-wrapper-3 {
+      @extend %helper-icon;
+      @include overlay();
+
+      position: absolute;
+    }
+
+    .block-item-information,
+    .block-slide-information {
+      margin-top: 32px;
+    }
+
+    .block-item-title,
+    .block-slide-title {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+
+    .block-item-date,
+    .block-slide-date {
+      color: #{$color-palette-black};
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 22px;
+      margin-top: 16px;
+      opacity: 0.5;
+      text-transform: uppercase;
+    }
+
+    @include breakpoint-mobile() {
+      padding: 56px 0;
+
+      .block-items {
+        display: none;
+      }
+
+      .block-slider {
+        display: block;
+      }
     }
   }
 

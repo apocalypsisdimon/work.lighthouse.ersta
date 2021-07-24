@@ -137,7 +137,7 @@
 }
 
 @mixin breakpoint ($value) {
-  @media all and (max-width: $value) {
+  @media all and (max-width: $value - 1) {
     @content
   }
 }

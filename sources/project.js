@@ -7,6 +7,7 @@ var _ = require('lodash');
 
     var qualityBlock = $('.block[data-block="quality"]', page);
     var qualitySlider = $('[data-control="slider.simple"]', qualityBlock).control('slider-simple', {
+        'autoHeight': true,
         'items': 1
     });
 
@@ -30,5 +31,11 @@ var _ = require('lodash');
                 'items': 4
             }
         }
+    });
+
+    var awardsBlock = $('.block[data-block="awards"]', page);
+    var awardsSlider = $('[data-control="slider.simple"]', awardsBlock).control('slider-simple', {
+        'autoHeight': true,
+        'items': 1
     });
 })();
