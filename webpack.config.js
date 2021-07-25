@@ -7,7 +7,7 @@ module.exports = {
     'output': {
         'path': path.resolve(__dirname),
         'filename': 'assets/js/application.js',
-        'publicPath': './../',
+        'publicPath': './../../',
         'libraryTarget': 'umd'
     },
     'module': {
@@ -57,7 +57,7 @@ module.exports = {
             'use': [{
                 'loader': 'file-loader',
                 'options': {
-                    'outputPath': 'resources/generated'
+                    'outputPath': 'assets/resources/generated'
                 }
             }],
             'type': 'javascript/auto'

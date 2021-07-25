@@ -1,0 +1,14 @@
+.block[data-block="banner.1"] {
+  height: 454px;
+  position: relative;
+
+  .block-picture {
+    @include background-cover();
+
+    height: 100%;
+  }
+
+  @include breakpoint-mobile() {
+    height: 240px;
+  }
+}
