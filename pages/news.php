@@ -25,7 +25,17 @@ $items = array_merge($items, $items, $items, $items);
     <div class="template-delimiter-wrapper">
         <div class="template-layout" data-template-layout="columns">
             <div class="template-layout-column">
-
+                <div class="page-brands">
+                    <div class="page-brands-items">
+                        <?php for ($index = 0; $index < 9; $index++) { ?>
+                            <div class="page-brands-item" data-active="<?= $index === 0 ? 'true' : 'false' ?>">
+                                <div class="page-brands-item-wrapper">
+                                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/partners/partner.<?= $index + 1 ?>.png" />
+                                </div>
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
             </div>
             <div class="template-layout-column">
                 <h1 class="page-title">Новости</h1>
@@ -53,6 +63,12 @@ $items = array_merge($items, $items, $items, $items);
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="page-filter-2">
+                        <select class="control" data-control="select" data-control-block="true">
+                            <option>Ersta</option>
+                            <option>Babor</option>
+                        </select>
                     </div>
                     <div class="page-items">
                         <?php foreach ($items as $item) { ?>
