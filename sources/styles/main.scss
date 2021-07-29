@@ -1,6 +1,7 @@
 // Загрузчик стилей (точка входа)
 
 @import './include.scss';
+@import './overrides.scss';
 @import './base.scss';
 @import './controls.scss';
 @import './template.scss';

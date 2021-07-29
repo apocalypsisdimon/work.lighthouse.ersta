@@ -1,8 +1,6 @@
 var _ = require('lodash');
 var libraries = require('./libraries.js');
 
-require('styles/main.scss');
-
 var loader;
 
 // Загрузка плагинов (рекурсивно из директории plugins все файлы script.js)
@@ -16,6 +14,8 @@ loader = require.context('plugins', true, /style\.(s?css)$/);
 loader.keys().forEach(function (key) {
     loader(key);
 });
+
+require('styles/main.scss');
 
 module.exports = _.assign({}, libraries);
 

@@ -71,6 +71,7 @@ module.exports = {
             'mixins': '~/mixins',
             'modules': '~/modules',
             'plugins': '~/plugins',
+            'project': '~/project',
             'resources': '~/resources',
             'styles': '~/styles'
         }

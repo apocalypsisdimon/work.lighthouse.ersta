@@ -6,15 +6,23 @@
   .page-filter-items {
     @include flex();
     @include flex-align(start, start);
-    @include flex-wrap(wrap);
+    @include flex-wrap(none);
+  }
 
-    margin: -2px;
+  .page-filter-scrollbar {
+    & > .scroll-element.scroll-x .scroll-element_outer {
+      height: 2px;
+    }
   }
 
   .page-filter-item {
     @include flex-item-auto();
 
-    padding: 2px;
+    padding-left: 2px;
+
+    &:first-child {
+      padding-left: 0;
+    }
 
     &[data-active="true"] {
       .page-filter-item-text {

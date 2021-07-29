@@ -30,25 +30,27 @@ $items = array_merge($items, $items, $items, $items);
             <div class="template-layout-column">
                 <h1 class="page-title">Новости</h1>
                 <div class="page-content">
-                    <div class="page-filter">
-                        <div class="page-filter-items">
-                            <div class="page-filter-item" data-active="true">
-                                <div class="page-filter-item-text">Все</div>
-                            </div>
-                            <div class="page-filter-item">
-                                <div class="page-filter-item-text">Компания</div>
-                            </div>
-                            <div class="page-filter-item">
-                                <div class="page-filter-item-text">Бренды</div>
-                            </div>
-                            <div class="page-filter-item">
-                                <div class="page-filter-item-text">Ersta Академия</div>
-                            </div>
-                            <div class="page-filter-item">
-                                <div class="page-filter-item-text">Ersta Франчайзинг</div>
-                            </div>
-                            <div class="page-filter-item">
-                                <div class="page-filter-item-text">Индустрия</div>
+                    <div class="page-filter scrollbar-outer" data-element="filter">
+                        <div class="page-filter-scrollbar scrollbar-outer" data-element="filter.scrollbar">
+                            <div class="page-filter-items">
+                                <div class="page-filter-item" data-active="true">
+                                    <div class="page-filter-item-text">Все</div>
+                                </div>
+                                <div class="page-filter-item">
+                                    <div class="page-filter-item-text">Компания</div>
+                                </div>
+                                <div class="page-filter-item">
+                                    <div class="page-filter-item-text">Бренды</div>
+                                </div>
+                                <div class="page-filter-item">
+                                    <div class="page-filter-item-text">Ersta Академия</div>
+                                </div>
+                                <div class="page-filter-item">
+                                    <div class="page-filter-item-text">Ersta Франчайзинг</div>
+                                </div>
+                                <div class="page-filter-item">
+                                    <div class="page-filter-item-text">Индустрия</div>
+                                </div>
                             </div>
                         </div>
                     </div>

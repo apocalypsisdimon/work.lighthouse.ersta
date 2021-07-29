@@ -349,7 +349,7 @@
       }
     }
 
-    @include breakpoint-mobile() {
+    @include breakpoint-tablet() {
       .block-partners-content {
         padding-bottom: 105px;
       }
@@ -359,7 +359,7 @@
       }
     }
 
-    @include breakpoint-tablet() {
+    @include breakpoint-mobile() {
       .block-partners-content {
         padding-bottom: 60px;
         padding-top: 56px;
@@ -566,6 +566,16 @@
       @include flex-shrink(1);
     }
 
+    @include breakpoint-tablet() {
+      .block-franchise {
+        @include flex-align-vertical(start);
+      }
+
+      .block-franchise-information {
+        padding-top: 28px;
+      }
+    }
+
     @include breakpoint(1050px) {
       .block-franchise-picture {
         padding-right: 12px;
@@ -710,6 +720,14 @@
 
       .block-franchise-information {
         padding: 32px 0;
+      }
+
+      .block-franchise-slide {
+        text-align: center;
+      }
+
+      .block-franchise-slide-icon {
+        @include flex-align-horizontal(center);
       }
     }
   }

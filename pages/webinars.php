@@ -30,19 +30,21 @@ $items = array_merge($items, $items, $items, $items);
             <div class="template-layout-column">
                 <h1 class="page-title">Вебинары</h1>
                 <div class="page-content">
-                    <div class="page-filter">
-                        <div class="page-filter-items">
-                            <div class="page-filter-item" data-active="true">
-                                <div class="page-filter-item-text">Анонсы вебинаров</div>
-                            </div>
-                            <div class="page-filter-item">
-                                <div class="page-filter-item-text">Записи вебинаров</div>
-                            </div>
-                            <div class="page-filter-item">
-                                <div class="page-filter-item-text">Теория и практика</div>
-                            </div>
-                            <div class="page-filter-item">
-                                <div class="page-filter-item-text">Дистанционное обучение</div>
+                    <div class="page-filter scrollbar-outer" data-element="filter">
+                        <div class="page-filter-scrollbar scrollbar-outer" data-element="filter.scrollbar">
+                            <div class="page-filter-items">
+                                <div class="page-filter-item" data-active="true">
+                                    <div class="page-filter-item-text">Анонсы вебинаров</div>
+                                </div>
+                                <div class="page-filter-item">
+                                    <div class="page-filter-item-text">Записи вебинаров</div>
+                                </div>
+                                <div class="page-filter-item">
+                                    <div class="page-filter-item-text">Теория и практика</div>
+                                </div>
+                                <div class="page-filter-item">
+                                    <div class="page-filter-item-text">Дистанционное обучение</div>
+                                </div>
                             </div>
                         </div>
                     </div>
