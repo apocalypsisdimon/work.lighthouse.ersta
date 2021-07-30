@@ -94,7 +94,19 @@
                             </div>
                         </div>
                         <div class="page-column">
-
+                            <div class="block" data-block="page.consultant.1">
+                                <div class="block-description">Микронутриенты и БАДы с высокой биодоступностью: ADVANCED NUTRITION PROGRAMME (Великобритания), advancednutritionprogramme.ru</div>
+                                <div class="block-picture">
+                                    <div class="block-picture-wrapper">
+                                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/news.detail/consultant.png" />
+                                    </div>
+                                </div>
+                                <div class="block-information">
+                                    <div class="block-title">Марина Алтуфьева</div>
+                                    <div class="block-post">ведущий специалист</div>
+                                    <div class="block-description">Микронутриенты и БАДы с высокой биодоступностью: ADVANCED NUTRITION PROGRAMME (Великобритания), advancednutritionprogramme.ru</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

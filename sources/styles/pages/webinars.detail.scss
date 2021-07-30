@@ -1,4 +1,116 @@
 .page[data-page="webinars.detail"] {
+  .page-columns {
+    @include flex();
+    @include flex-align(start, start);
+    @include flex-wrap(wrap);
+  }
+
+  .page-column {
+    @include flex-item-auto();
+
+    padding-left: 56px;
+    width: 392px;
+
+    &:first-child {
+      padding-left: 0;
+      width: calc(100% - 392px);
+    }
+  }
+
+  .block[data-block="page.consultant.1"] {
+    .block-picture {
+      @include flex();
+      @include flex-align-horizontal(center);
+      @include flex-wrap(none);
+    }
+
+    .block-picture-wrapper {
+      @extend %helper-icon;
+      @include flex-item-auto();
+      @include size(200px, 200px);
+
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .block-information {
+      margin-top: 32px;
+    }
+
+    .block-title {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+
+    .block-post {
+      color: #{$color-1};
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    .block-description {
+      color: #{$color-palette-black};
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 16px;
+    }
+
+    & > .block-description {
+      display: none;
+      width: 100%;
+    }
+
+    @include breakpoint(1420px) {
+      @include flex();
+      @include flex-align(start, center);
+      @include flex-wrap(wrap);
+
+      .block-picture,
+      .block-information,
+      & > .block-description {
+        @include flex-item-auto();
+      }
+
+      .block-information {
+        margin-top: 0;
+        padding-left: 32px;
+        width: calc(100% - 200px);
+      }
+    }
+
+    @include breakpoint-mobile() {
+      .block-picture {
+        margin-top: 32px;
+      }
+
+      .block-picture,
+      .block-information {
+        width: 100%;
+      }
+
+      .block-information {
+        margin-top: 32px;
+        padding-left: 0;
+        text-align: center;
+
+        & > .block-description {
+          display: none;
+        }
+      }
+
+      .block-description {
+        margin-top: 0;
+      }
+
+      & > .block-description {
+        display: block;
+      }
+    }
+  }
+
   .block[data-block="banner.1"] {
     margin-bottom: 48px;
   }
@@ -22,6 +134,22 @@
 
     @include breakpoint-tablet() {
       padding: 0;
+    }
+  }
+
+  @include breakpoint(1420px) {
+    .page-column {
+      @include flex-order(0);
+
+      padding-left: 0;
+      width: 100%;
+
+      &:first-child {
+        @include flex-order(1);
+
+        margin-top: 56px;
+        width: 100%;
+      }
     }
   }
 }
