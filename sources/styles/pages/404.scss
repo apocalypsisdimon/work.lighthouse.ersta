@@ -1,0 +1,65 @@
+.page[data-page="404"] {
+  text-align: center;
+
+  %page--404--part {
+    margin: 0 auto;
+  }
+
+  .page-picture {
+    @extend %helper-icon;
+    @extend %page--404--part;
+    @include size(96px, 96px);
+  }
+
+  .page-title,
+  .page-description {
+    @extend %page--404--part;
+
+    width: 416px;
+  }
+
+  .page-title {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 34px;
+    margin-top: 40px;
+  }
+
+  .page-description {
+    color: #{$color-palette-black};
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 40px;
+  }
+
+  .page-controls {
+    @include flex();
+    @include flex-align(center, center);
+    @include flex-wrap(wrap);
+
+    margin: 38px -2px -2px -2px;
+  }
+
+  .page-control {
+    @include flex-item-auto();
+
+    padding: 2px;
+  }
+
+  @include breakpoint-tablet() {
+    .page-title,
+    .page-description {
+      width: auto;
+    }
+  }
+
+  @include breakpoint-mobile() {
+    .page-title,
+    .page-description {
+      margin-top: 24px;
+    }
+    .page-controls {
+      margin: 22px -2px -2px -2px;
+    }
+  }
+}
