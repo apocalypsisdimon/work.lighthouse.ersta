@@ -265,23 +265,17 @@
   margin-top: 16px;
 }
 
-%template-cookies-content-part {
-  @include flex-item-auto();
-}
-
 .template-cookies-text {
-  @extend %template-cookies-content-part;
+  @include flex-item-full();
 
   font-size: 16px;
   line-height: 30px;
+  max-width: calc(100% - 190px);
   padding-right: 24px;
-  width: calc(100% - 190px);
 }
 
 .template-cookies-control {
-  @extend %template-cookies-content-part;
-
-  width: 190px;
+  @include flex-item-auto();
 }
 
 .template-footer {}
@@ -521,6 +515,19 @@
 
   .template-header-phone {
     display: none;
+  }
+
+  .template-cookies-text {
+    @include flex-item-auto();
+
+    max-width: none;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .template-cookies-control {
+    margin-top: 24px;
+    width: 100%;
   }
 
   .template-footer-content-wrapper {

@@ -17,7 +17,7 @@ if (cookiesPopup.length > 0) {
     if (Cookie.get('CookiesConfirmed') !== 'true') {
         cookiesPopup.attr('data-active', 'true');
         cookiesPopup.find('[data-action="close"]').on('click', function () {
-            cookiesPopup.attr('data-active', '');
+            cookiesPopup.removeAttr('data-active');
             Cookie.set('CookiesConfirmed', 'true', {
                 'path': '/'
             });
