@@ -1,0 +1,19 @@
+.block[data-block="banner.3"] {
+  margin: 0 auto;
+  max-width: 720px;
+  position: relative;
+
+  .block-picture {
+    @include background-cover();
+
+    height: 320px;
+  }
+
+  .block-title {
+    color: #a5a5a5;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 16px;
+  }
+}

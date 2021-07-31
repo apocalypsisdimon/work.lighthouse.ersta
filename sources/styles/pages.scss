@@ -60,6 +60,12 @@
 
 .page-breadcrumbs {
   margin-bottom: 30px;
+
+  &[data-align="center"] {
+    .page-breadcrumbs-items {
+      @include flex-align-horizontal(center);
+    }
+  }
 }
 
 .page-breadcrumbs-items {
@@ -115,6 +121,10 @@
   line-height: 44px;
   margin: 0 0 32px 0;
   text-transform: uppercase;
+
+  &[data-align="center"] {
+    text-align: center;
+  }
 }
 
 .page-navigation {
@@ -256,6 +266,7 @@
 
 @import './pages/main.scss';
 @import './pages/news.scss';
+@import './pages/news.detail.scss';
 @import './pages/webinars.scss';
 @import './pages/webinars.detail.scss';
 @import './pages/jobs.scss';

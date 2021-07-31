@@ -3,6 +3,10 @@
 .template {
   overflow: hidden;
   z-index: 0;
+
+  &[data-template-filled="true"] {
+    background-color: #{$color-background-1};
+  }
 }
 
 .template,
@@ -226,6 +230,11 @@
         width: 262px;
       }
     }
+  }
+
+  &[data-template-layout="centered"] {
+    margin: 0 auto;
+    max-width: 1180px;
   }
 }
 

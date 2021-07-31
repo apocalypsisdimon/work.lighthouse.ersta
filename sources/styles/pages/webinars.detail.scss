@@ -117,24 +117,14 @@
 
   .block[data-block="video.1"] {
     margin-top: 48px;
-    padding: 0 90px;
 
     & + * {
       margin-top: 48px;
-    }
-
-    @include breakpoint-tablet() {
-      padding: 0;
     }
   }
 
   .block[data-block="items.1"] {
     margin-top: 24px;
-    padding: 0 48px;
-
-    @include breakpoint-tablet() {
-      padding: 0;
-    }
   }
 
   @include breakpoint(1420px) {

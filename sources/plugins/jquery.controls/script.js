@@ -28,6 +28,8 @@ $.fn.control = function (name, options) {
 
         item._control = control.call($([item]), _.merge({}, options));
     });
+
+    return this;
 };
 
 $.fn.control.controls = controls;

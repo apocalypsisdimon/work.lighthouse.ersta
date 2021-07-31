@@ -13,7 +13,7 @@ define(SITE_TEMPLATE_PATH, '');
         <script src="/assets/js/application.js"></script>
     </head>
     <body>
-        <div id="application" class="template">
+        <div id="application" class="template" data-template-filled="<?= defined('SITE_TEMPLATE_FILLED') && SITE_TEMPLATE_FILLED ? 'true' : 'false' ?>">
             <header id="header" class="template-header">
                 <div class="template-header-background"></div>
                 <div class="template-header-container template-delimiter">
