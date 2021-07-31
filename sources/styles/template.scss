@@ -2,6 +2,7 @@
 
 .template {
   overflow: hidden;
+  z-index: 0;
 }
 
 .template,
@@ -226,6 +227,61 @@
       }
     }
   }
+}
+
+.template-cookies {
+  @include sides(auto, 16px, 16px, 16px);
+
+  background-color: #{$color-background-1};
+  display: none;
+  padding: 24px;
+  position: fixed;
+  z-index: 1;
+
+  &[data-active="true"] {
+    display: block;
+  }
+}
+
+.template-cookies-close {
+  @extend %helper-icon;
+  @include sides(-48px, 0, auto, auto);
+  @include size(48px, 48px);
+
+  cursor: pointer;
+  position: absolute;
+}
+
+.template-cookies-title {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.template-cookies-content {
+  @include flex();
+  @include flex-align(start, start);
+  @include flex-wrap(wrap);
+
+  margin-top: 16px;
+}
+
+%template-cookies-content-part {
+  @include flex-item-auto();
+}
+
+.template-cookies-text {
+  @extend %template-cookies-content-part;
+
+  font-size: 16px;
+  line-height: 30px;
+  padding-right: 24px;
+  width: calc(100% - 190px);
+}
+
+.template-cookies-control {
+  @extend %template-cookies-content-part;
+
+  width: 190px;
 }
 
 .template-footer {}

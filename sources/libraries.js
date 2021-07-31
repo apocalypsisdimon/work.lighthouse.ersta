@@ -1,15 +1,17 @@
 // Внешние библиотеки, используемые в проекте
 
-const _ = require('lodash');
-const $ = require('jquery');
-const axios = require('axios');
-const Qs = require('qs');
-const Vue = require('vue');
+var _ = require('lodash');
+var $ = require('jquery');
+var axios = require('axios');
+var Cookie = require('js-cookie');
+var Qs = require('qs');
+var Vue = require('vue');
 
 module.exports = {
     '_': _,
     '$': $,
     'axios': axios,
+    'Cookie': Cookie,
     'jQuery': $,
     'lodash': _,
     'Qs': Qs,

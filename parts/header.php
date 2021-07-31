@@ -14,7 +14,7 @@ define(SITE_TEMPLATE_PATH, '');
     </head>
     <body>
         <div id="application" class="template">
-            <header class="template-header">
+            <header id="header" class="template-header">
                 <div class="template-header-background"></div>
                 <div class="template-header-container template-delimiter">
                     <div class="template-header-container-wrapper template-delimiter-wrapper">
