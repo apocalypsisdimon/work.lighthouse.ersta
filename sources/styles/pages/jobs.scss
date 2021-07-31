@@ -1,0 +1,101 @@
+.page[data-page="jobs"] {
+  .page-title {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 34px;
+  }
+
+  .page-items {
+    margin-top: 40px;
+  }
+
+  .page-item {
+    border-top: 1px solid #{$color-background-5};
+    display: block;
+    margin-top: 24px;
+    padding-top: 24px;
+
+    &:first-child {
+      border-top: none;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  .page-item-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  .page-item-properties {
+    margin-top: 16px;
+  }
+
+  .page-item-properties-wrapper {
+    margin: -8px 0;
+  }
+
+  .page-item-property {
+    padding: 8px 0;
+  }
+
+  .page-item-property-wrapper {
+    @include flex();
+    @include flex-align(start, start);
+    @include flex-wrap(wrap);
+
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  @at-root %page--jobs--item-property-part {
+    @include flex-item-auto();
+  }
+
+  .page-item-property-title {
+    @extend %page--jobs--item-property-part;
+
+    color: #{$color-1};
+    padding-right: 20px;
+    width: 180px;
+  }
+
+  .page-item-property-value {
+    @extend %page--jobs--item-property-part;
+
+    color: #{$color-palette-black};
+    width: calc(100% - 180px);
+  }
+
+  .page-item-controls {
+    margin-top: 16px;
+  }
+
+  .page-item-controls-wrapper {
+    @include flex();
+    @include flex-align(start, center);
+    @include flex-wrap(wrap);
+
+    margin: -8px -8px;
+  }
+
+  .page-item-control {
+    @include flex-item-auto();
+
+    padding: 8px 8px;
+  }
+
+  @include breakpoint-tablet() {}
+
+  @include breakpoint-mobile() {
+    %page--jobs--item-property-part {
+      padding: 0;
+      width: 100%;
+    }
+
+    .page-item-control {
+      width: 100%;
+    }
+  }
+}

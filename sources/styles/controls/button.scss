@@ -28,6 +28,8 @@
 
   &[data-control-block="true"] {
     @include flex();
+
+    width: 100%;
   }
 
   &[data-control-scheme="transparent.1"] {
