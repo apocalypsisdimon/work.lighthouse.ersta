@@ -1,0 +1,58 @@
+.page[data-page="jobs.detail"] {
+  .page-title {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 34px;
+  }
+
+  .page-blocks {
+    margin-top: 40px;
+  }
+
+  .page-block {
+    border-top: 1px solid #{$color-background-5};
+    margin-top: 40px;
+    padding-top: 40px;
+
+    &:first-child {
+      border-top: none;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  .page-controls {
+    margin-top: 40px;
+  }
+
+  .page-controls-wrapper {
+    @include flex();
+    @include flex-align(start, center);
+    @include flex-wrap(none);
+
+    margin: -8px;
+  }
+
+  .page-control {
+    @include flex-item-auto();
+
+    padding: 8px;
+  }
+
+  @include breakpoint-mobile() {
+    .page-blocks,
+    .page-controls {
+      margin-top: 24px;
+    }
+
+    .page-block {
+      margin-top: 24px;
+      padding-top: 24px;
+
+      &:first-child {
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
+  }
+}
