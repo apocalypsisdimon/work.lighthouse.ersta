@@ -1,0 +1,23 @@
+.control[data-control="textarea"] {
+  @extend .control[data-control="input"];
+
+  &[data-control-resize="both"] {
+    resize: both;
+  }
+
+  &[data-control-resize="horizontal"] {
+    resize: horizontal;
+  }
+
+  &[data-control-block="true"] {
+    resize: vertical;
+  }
+
+  &[data-control-resize="vertical"] {
+    resize: vertical;
+  }
+
+  &[data-control-resize="none"] {
+    resize: none;
+  }
+}

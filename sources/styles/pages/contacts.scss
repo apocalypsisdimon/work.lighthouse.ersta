@@ -1,0 +1,128 @@
+.page[data-page="contacts"] {
+  .page-title {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 34px;
+  }
+
+  .page-items {
+    margin: 34px 0 -6px 0;
+  }
+
+  .page-item {
+    display: block;
+    padding: 6px 0;
+  }
+
+  .page-item-wrapper {
+    @include flex();
+    @include flex-align(start, center);
+    @include flex-wrap(none);
+  }
+
+  @at-root %page--contacts--item-part {
+    @include flex-item-auto();
+
+    display: block;
+  }
+
+  .page-item-icon {
+    @extend %page--contacts--item-part;
+
+    padding-right: 16px;
+  }
+
+  .page-item-icon-wrapper {
+    @extend %helper-icon;
+    @include size(18px, 18px);
+  }
+
+  .page-item-text {
+    @extend %page--contacts--item-part;
+
+    color: #{$color-palette-black};
+    font-size: 14px;
+    line-height: 22px;
+    width: calc(100% - 34px);
+  }
+
+  .page-form {
+    border-top: 1px solid #{$color-background-5};
+    display: block;
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+
+  .page-form-fields {
+    @include flex();
+    @include flex-align(start, center);
+    @include flex-wrap(wrap);
+
+    margin: -8px -12px;
+  }
+
+  .page-form-field {
+    @include flex-item-auto();
+
+    padding: 8px 12px;
+    width: 50%;
+  }
+
+  .page-form-question {
+    margin-top: 40px;
+
+    textarea {
+      min-height: 56px;
+    }
+  }
+
+  .page-form-consent {
+    margin-top: 40px;
+  }
+
+  .page-form-controls {
+    @include flex();
+    @include flex-align(start, center);
+    @include flex-wrap(wrap);
+
+    margin: 38px -2px -2px -2px;
+  }
+
+  .page-form-control {
+    @include flex-item-auto();
+
+    padding: 2px;
+  }
+
+  @include breakpoint-tablet() {
+    .page-form-field {
+      &[data-size="full"] {
+        width: 100%;
+      }
+    }
+  }
+
+  @include breakpoint-mobile() {
+    .page-items {
+      margin: 18px 0 -6px 0;
+    }
+
+    .page-form {
+      margin-top: 24px;
+      padding-top: 24px;
+    }
+
+    .page-form-field {
+      width: 100%;
+    }
+
+    .page-form-question,
+    .page-form-consent {
+      margin-top: 24px;
+    }
+
+    .page-form-controls {
+      margin: 22px -2px -2px -2px;
+    }
+  }
+}

@@ -5,6 +5,59 @@
   padding-top: 72px;
 }
 
+.page-menu {}
+
+.page-menu-items {
+  margin: -3px 0 -16px 0;
+}
+
+.page-menu-item {
+  padding: 16px 0;
+
+  &[data-active="true"] {
+    .page-menu-item-wrapper {
+      @extend %page-menu-item--hover;
+
+      &:before {
+        @include size(4px, 4px);
+
+        background-color: #{$color-accent};
+        border-radius: 50%;
+        content: ' ';
+        display: block;
+        left: -20px;
+        position: absolute;
+        top: 6px;
+      }
+    }
+  }
+}
+
+.page-menu-item-wrapper {
+  @include transition($transition-time, (color));
+
+  color: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 16px;
+  position: relative;
+  text-transform: uppercase;
+
+  &:hover {
+    @extend %page-menu-item--hover;
+  }
+}
+
+%page-menu-item--hover {
+  color: #{$color-accent};
+}
+
+.page-mobile-menu {
+  display: none;
+  margin-bottom: 56px;
+}
+
 .page-breadcrumbs {
   margin-bottom: 30px;
 }
@@ -152,7 +205,26 @@
   }
 }
 
+@include breakpoint-tablet {
+  .page {
+    padding-top: 80px;
+  }
+
+  .page-mobile-menu {
+    display: block;
+  }
+}
+
 @include breakpoint-mobile {
+  .page {
+    padding-bottom: 48px;
+    padding-top: 44px;
+  }
+
+  .page-mobile-menu {
+    margin-bottom: 32px;
+  }
+
   .page-title {
     font-size: 26px;
     line-height: 34px;
@@ -172,4 +244,5 @@
 @import './pages/news.scss';
 @import './pages/webinars.scss';
 @import './pages/webinars.detail.scss';
+@import './pages/contacts.scss';
 @import './pages/404.scss';

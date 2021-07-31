@@ -217,6 +217,7 @@
     @include flex-wrap(none);
 
     .template-layout-column {
+      position: relative;
       width: calc(100% - 262px);
 
       &:first-child {

@@ -1,0 +1,10 @@
+.control[data-control="link"] {
+  @include transition($transition-time, (color));
+
+  color: #{$color};
+  text-decoration: underline;
+
+  &:hover {
+    color: #{$color-accent};
+  }
+}

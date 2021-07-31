@@ -1,0 +1,60 @@
+.control[data-control="checkbox"] {
+  @include flex();
+  @include flex-align(start, center);
+  @include flex-wrap(none);
+
+  position: relative;
+  z-index: 0;
+
+  & > .control-input {
+    @include size(0, 0);
+
+    margin: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+
+    &:checked + .control-selector {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  @at-root %control--checkbox--part {
+    @include flex-item-auto();
+
+    position: relative;
+    z-index: 1;
+  }
+
+  & > .control-selector {
+    @extend %control--checkbox--part;
+    @include size(18px, 18px);
+
+    border: 1px solid #{$color-1};
+    cursor: pointer;
+
+    &:before {
+      @include sides(3px, 3px, 3px, 3px);
+      @include size(auto, auto);
+      @include transition($transition-time, (opacity));
+
+      background-color: #{$color-1};
+      content: '';
+      display: block;
+      opacity: 0;
+      position: absolute;
+    }
+  }
+
+  & > .control-content {
+    @extend %control--checkbox--part;
+
+    padding-left: 12px;
+    width: calc(100% - 18px);
+  }
+}

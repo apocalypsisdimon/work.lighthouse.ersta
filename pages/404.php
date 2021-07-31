@@ -5,7 +5,7 @@
             <div class="page-picture">
                 <img src="<?= SITE_TEMPLATE_PATH ?>/assets/resources/pictures/pages/404/banner.png" />
             </div>
-            <h3 class="page-title">Cтраница не найдена</h3>
+            <h1 class="page-title">Cтраница не найдена</h1>
             <div class="page-description">Что-то пошло не так — страница, которую вы хотели открыть, не существует.</div>
             <div class="page-controls">
                 <div class="page-control">

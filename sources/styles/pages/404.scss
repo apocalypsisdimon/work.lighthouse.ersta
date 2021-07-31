@@ -1,7 +1,7 @@
 .page[data-page="404"] {
   text-align: center;
 
-  %page--404--part {
+  @at-root %page--404--part {
     margin: 0 auto;
   }
 
@@ -58,6 +58,7 @@
     .page-description {
       margin-top: 24px;
     }
+
     .page-controls {
       margin: 22px -2px -2px -2px;
     }
