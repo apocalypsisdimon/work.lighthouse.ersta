@@ -55,6 +55,6 @@
     @extend %control--checkbox--part;
 
     padding-left: 12px;
-    width: calc(100% - 18px);
+    max-width: calc(100% - 18px);
   }
 }
