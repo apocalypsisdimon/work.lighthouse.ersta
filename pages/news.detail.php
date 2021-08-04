@@ -3,7 +3,7 @@
 <div class="page template-delimiter" data-page="news.detail">
     <div class="template-delimiter-wrapper">
         <div class="template-layout" data-template-layout="centered">
-            <div class="page-breadcrumbs" data-align="center">
+            <div class="page-breadcrumbs" data-align="center" data-adaptable="true">
                 <div class="page-breadcrumbs-items">
                     <div class="page-breadcrumbs-item" data-type="link" data-active="true">
                         <a href="#" class="page-breadcrumbs-item-wrapper">Новости</a>
@@ -15,6 +15,10 @@
                         <a class="page-breadcrumbs-item-wrapper">Skin Clear Biome™ - полностью уникальная формула, специально разработанная и воплощенная в жизнь командой Advanced Nutrition Programme™</a>
                     </div>
                 </div>
+                <a href="#" class="page-breadcrumbs-button">
+                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/resources/icons/arrow.left.svg" />
+                    <span>Назад</span>
+                </a>
             </div>
             <h1 class="page-title" data-align="center">Skin Clear Biome™ - полностью уникальная формула, специально разработанная и воплощенная в жизнь командой Advanced Nutrition Programme™</h1>
             <div class="page-content">

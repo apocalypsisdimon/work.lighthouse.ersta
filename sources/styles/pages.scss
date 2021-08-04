@@ -104,6 +104,26 @@
   line-height: 19px;
 }
 
+.page-breadcrumbs-button {
+  @include flex-align(start, center);
+  @include flex-wrap(none);
+
+  color: #{$color-1};
+  display: none;
+  font-size: 13px;
+  line-height: 19px;
+
+  & > * {
+    @include flex-item-auto();
+
+    display: block;
+
+    & + * {
+      padding-left: 10px;
+    }
+  }
+}
+
 .page-back {
   margin-bottom: 40px;
 }
@@ -232,6 +252,18 @@
 
   .page-mobile-menu {
     display: block;
+  }
+
+  .page-breadcrumbs {
+    &[data-adaptable="true"] {
+      .page-breadcrumbs-items {
+        display: none;
+      }
+
+      .page-breadcrumbs-button {
+        @include flex(true);
+      }
+    }
   }
 }
 

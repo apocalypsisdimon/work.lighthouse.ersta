@@ -22,6 +22,12 @@
     border-color: #{$color-accent-light-1};
   }
 
+  & > * {
+    @include flex-item-auto();
+
+    display: block;
+  }
+
   & > * + * {
     padding-left: 8px;
   }
